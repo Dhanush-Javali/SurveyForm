@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <title>Survey</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="heading">
+      <h1>Survey Form</h1>
+      <h3>
+        Kindly fill the form to know about you..!<br /><span
+          ><p>
+            It is proved by surveys that happiness does not come from love,
+            wealth,<br />power but the pursuit of attainable goals.
+          </p>
+        </span>
+      </h3>
+    </div>
+
+    <div id="error"></div>
+    <form class="detailsform" action="./index.js" method="post">
+      <div class="fields">
+        <label for="fname">FirstName</label><br />
+        <input
+          type="text"
+          placeholder="firstname"
+          name="fname"
+          required
+        /><br /><br />
+
+        <label for="lname">LastName</label><br />
+        <input
+          type="text"
+          placeholder="lastname"
+          name="lname"
+          required
+        /><br /><br />
+
+        <label for="dob">Date of Birth</label><br />
+        <input type="date" placeholder="DOB" name="DOB" required /><br /><br />
+
+        <label for="country">Country</label><br />
+        <select name="country" class="country">
+          <option name="select country" id="opt">Select country</option>
+          <option value="India" id="opt">India</option>
+          <option value="Singapore" id="opt">Singapore</option>
+          <option value="Italy" id="opt">Italy</option>
+          <option value="America" id="opt">America</option>
+          <option value="Japan" id="opt">Japan</option></select
+        ><br /><br />
+
+        <label for="name">Gender : </label><br />
+        <div class="gen">
+          <input
+            type="radio"
+            name="gender"
+            value="Male"
+            class="genradio"
+            required
+          />&nbsp;male&nbsp;&nbsp;
+          <input
+            type="radio"
+            name="gender"
+            value="Female"
+            class="genradio"
+            required
+          />&nbsp;female&nbsp;&nbsp; &nbsp;
+          <input
+            type="radio"
+            name="gender"
+            value="Others"
+            class="genradio"
+            required
+          />&nbsp;others
+        </div>
+        <br /><br />
+
+        <label for="profession">Profession</label><br />
+        <input
+          type="text"
+          placeholder="profession"
+          name="profession"
+          required
+        /><br /><br />
+
+        <label for="email">Email</label><br />
+        <input
+          type="email"
+          placeholder="email"
+          name="email"
+          required
+        /><br /><br />
+
+        <label for="m-number">Mobile number</label><br />
+        <input
+          type="tel"
+          placeholder="number"
+          name="Pno"
+          required
+        /><br /><br />
+
+        <div class="flexbtn">
+          <input type="submit" value="Submit" class="finalbtn" />
+          <input type="reset" value="Reset" class="finalbtn btnreset" />
+        </div>
+      </div>
+    </form>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

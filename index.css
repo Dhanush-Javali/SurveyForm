@@ -1,0 +1,167 @@
+body{
+    margin: 0;
+    padding: 10px;
+    background: url(./img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    background-color: rgba(128, 128, 128, 0.457);
+    background-blend-mode:multiply;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgba(245, 245, 245, 0.836);
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+   
+}
+
+form{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.35);
+    font-size: 20px;
+    width: 650px;
+    margin-bottom: 10px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.fields{
+    width: 200;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input{
+    border: none;
+    width: 500px;
+    height: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.70);
+}
+
+input::placeholder{
+    font-size: 15px;
+}
+
+.heading{
+   color: rgba(0, 0, 0, 0.781);
+   text-align: center;
+}
+
+.gen{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+}
+
+.genradio{
+    width: 15px;
+    border-style: none;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0);
+    cursor: pointer;
+}
+
+.country{
+    border: none;
+    height: 43px;
+    border-radius: 5px;
+    padding-left:5px;
+    font-size: 15px;
+    width: 520px;
+    box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.70);
+}
+
+.finalbtn{
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.63);
+    margin-left: 20px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+    border: none;
+}
+
+.finalbtn:hover{
+    background-color: rgba(224, 224, 224, 0.909);
+}
+
+.finalbtn:active{
+    background-color: rgba(224, 224, 224, 0.521);
+}
+
+.flexbtn{
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    border: none;
+}
+
+span{
+    color: rgba(240, 248, 255, 0.664);
+}
+
+p{
+    margin: 2px;
+}
+
+@media screen and (max-width:667px){
+ 
+    body{
+        padding: 5px;
+    }
+
+    form{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 10px;
+       vertical-align: middle;
+    }
+
+    .heading{
+        color: rgba(255, 255, 255, 0.795);
+    }
+
+    span{
+        color: rgba(0, 0, 0, 0.817);
+    }
+
+    input{
+        width: 250px;
+    }
+
+    .country{
+        width: 269px;
+    }
+
+    .flexbtn{
+       text-align: center;
+        width: 250px;
+        
+    }
+
+}
+
+
+#error{
+    color: red;
+    font-size: 10px;
+    position: absolute;
+    bottom: 189px;
+    padding: 0;
+    margin: 0;
+}
+
